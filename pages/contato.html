@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - RHL Consultoria</title>
+
+    <link rel="stylesheet" href="../css/style__contact.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+</head>
+<body>
+    <header>
+        <div class="content">
+            <nav>
+                <div class="brand">
+                    <img 
+                        src="../img/logotransp2.png" 
+                        class="logo">
+                     <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./pages/contato.html">Contato</a></li>
+                        <li><a href="parceiros.html">Parceiros</a></li>
+                        <li><a href="./pages/servicos.html">Serviços</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header> 
+    <article>
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text>" id="nome" class="input-padrao"required>
+
+            <label for="email">Email</label>
+            <input type="email>" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel>" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="cep">CEP</label>
+            <input class="input-padrao" type="text" id="cep" maxlength="9" required>
+            
+            <label for="endereço">Endereço</label>
+            <input type="text" id="logradouro"  class="input-padrao" disabled>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro"  class="input-padrao" disabled>
+ 
+            <label for="cidade">Cidade</label>
+            <input type="text" id="localidade"  class="input-padrao" disabled>
+            
+            <label for="estado">UF</label>
+            <input type="text" id="uf"  class="input-padrao" disabled>
+
+            <label for="numero">Número</label>
+            <input type="text" id="numero"  class="input-padrao" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea required>
+
+                <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                 <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas vagas por e-mail?</label>
+                <input type="submit" value="Enviar formulário" class="enviar">
+     </form>
+    </article>
+
+    <footer>
+        <img src="../img/rodape.png" alt="Logo da RHL Consultoria, carreira & emprego">
+        <p class="copyright">&copy;Copyright RHL Consultoria, carreira & emprego - 2022</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

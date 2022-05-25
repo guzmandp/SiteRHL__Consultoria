@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,200&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+
+    --black:  #262626;
+    --blue:   #93B3BF;
+    --gray:   #F2F2F2;
+    --red:    #BF6079;
+    --orange: #D97D48;
+}
+
+html, 
+body {
+    font-family:"Montserrat", sans-serif;
+    width: 100%;
+    overflow-x: hidden; /* ocultar barra de rodagem*/
+}
+
+header{
+    width: 100%;
+    background: var(--gray);
+}
+
+.content{
+    max-width: 1000px;
+    min-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    margin-top: 50px;
+    width: 100%; 
+    position: fixed;   
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    background: var(--blue);
+    padding: 5px;
+    border-radius: 60px 20px 5px;
+
+}
+
+nav li:hover{
+background: var(--red);
+transition: color 0.6s;
+}
+
+nav ul li a {
+    color: var(--red);
+    text-decoration: none;
+    margin: 20px;
+    text-transform: uppercase;    
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.logo  {
+    width: 25%;
+}
+
+.img__banner{
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: var(--gray);
+    width: 100%;
+}
+
+.titulo-principal{
+    color: var(--red);
+    font-size: 3.1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.principal p{
+    color: var(--blue);
+    margin: 0 0 1em;
+    padding: 10px;
+    line-height: 1.8em;
+}
+
+.principal strong {
+    font-weight: bold;
+    color: var(--red);
+}
+
+.principal em {
+    font-style: italic;
+    font-weight: 600;
+   
+}
+
+.img__texto-principal{
+    width: 50%;
+    float: left;
+    margin: 0 20px 20px 20px;
+    border-radius: 60px 20px 5px;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: var(--blue);
+}
+
+.titulo-mapa{
+    color: var(--red);
+    font-size: 3.1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mapa-conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mapa p {
+    color: var(--black);
+    margin: 0 0 1em;
+    padding: 10px;
+    line-height: 1.8em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    background: var(--black);
+    padding: 10px 0;
+}
+
+.copyright {
+    color: var(--blue);
+    font-size: 1.1em;
+    margin: 10px 0 0;
+}

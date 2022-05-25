@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,200&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    --black:  #262626;
+    --blue:   #93B3BF;
+    --gray:   #F2F2F2;
+    --red:    #BF6079;
+    --orange: #D97D48;
+}
+
+html, 
+body {
+    font-family:"Montserrat", sans-serif;
+    width: 100%;
+    overflow-x: hidden; /* ocultar barra de rodagem*/
+}
+
+header{
+    width: 100%;
+    background: var(--gray);
+}
+
+.content{
+    max-width: 1000px;
+    min-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    margin-top: 50px;
+    width: 100%;    
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    background: var(--blue);
+    padding: 5px;
+    border-radius: 60px 20px 5px;
+
+}
+
+nav li:hover{
+background: var(--red);
+transition: color 0.6s;
+}
+
+nav ul li a {
+    color: var(--red);
+    text-decoration: none;
+    margin: 20px;
+    text-transform: uppercase;    
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.logo  {
+    width: 25%;
+}
+
+article{
+    width: 940px;
+    margin: 0 auto;
+  
+}
+
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: #C78c19;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+}
+
+footer {
+    text-align: center;
+    background: var(--black);
+    padding: 10px 0;
+}
+
+.copyright {
+    color: var(--blue);
+    font-size: 1.1em;
+    margin: 10px 0 0;
+}
