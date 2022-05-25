@@ -21,7 +21,61 @@ body {
     width: 100%;
     overflow-x: hidden; /* ocultar barra de rodagem*/
 }
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    /*background-color: #25d366; cor para o fundo do icone*/
+    color: #25d366;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    /*box-shadow: 1px 1px 2px #888;  sombra no icone*/
+    z-index: 1000;
 
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.linkedin {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 110px;
+    color: #0A66C2;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+
+}
+
+.fa-linkedin {
+    margin-top: 16px;
+}
+
+.instagram {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 180px;
+    color: red;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+
+}
+
+.fa-instagram {
+    margin-top: 16px;
+}
 header{
     width: 100%;
     background: var(--gray);
@@ -35,28 +89,35 @@ header{
     flex-direction: row;
 }
 
-nav {
-    margin-top: 50px;
+.nav {
     width: 100%; 
-    position: fixed;   
+    position: fixed;
+    left: 0px; 
+    background: rgba(0,0,0,0.3);
+}
+.corNav {
+    background: var(--gray);
 }
 
 .brand {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 nav li{
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 10px;
     background: var(--blue);
     padding: 5px;
     border-radius: 60px 20px 5px;
 
+}
+nav ul{
+    margin: 5px;
 }
 
 nav li:hover{
@@ -70,7 +131,7 @@ nav ul li a {
     margin: 20px;
     text-transform: uppercase;    
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -79,8 +140,10 @@ nav ul li a:hover {
 }
 
 .logo  {
-    width: 25%;
+    width: 20%;
 }
+
+
 
 .img__banner{
     width: 100%;
