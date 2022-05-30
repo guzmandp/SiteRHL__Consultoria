@@ -22,22 +22,25 @@ body {
     width: 100%;
     overflow-x: hidden; /* ocultar barra de rodagem*/
 }
+main{
+     background: #FFFFFF url("../img/bannerz.jpg") no-repeat right top fixed;
+     background-size: 100%;    /* 20% à direita e 40% abaixo */
+}
 .whatsapp {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
-    /*background-color: #25d366; cor para o fundo do icone*/
-    color: #25d366;
+    bottom: 5%;
+    right: 3%;
+    background-color: var(--red);/* cor para o fundo do icone*/
+    color: #060706d0;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    /*box-shadow: 1px 1px 2px #888;  sombra no icone*/
+    box-shadow: 1px 1px 2px #888; /* sombra no icone*/
     z-index: 1000;
 
 }
-
 .fa-whatsapp {
     margin-top: 16px;
 }
@@ -46,9 +49,10 @@ body {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 110px;
-    color: #0A66C2;
+    bottom: 20%;
+    right: 3%;
+     background-color: var(--red);/* cor para o fundo do icone*/
+    color: #060706d0;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -64,9 +68,10 @@ body {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 180px;
-    color: red;
+     bottom: 35%;
+    right: 3%;
+    background-color: var(--red);/* cor para o fundo do icone*/
+    color: #060706d0;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -77,6 +82,22 @@ body {
 .fa-instagram {
     margin-top: 16px;
 }
+.whatsapp:hover{
+    background-color: #060706d0;/* cor para o fundo do icone*/
+    color: var(--red);
+    transition: background 0.6s;
+}
+.linkedin:hover{
+    background-color: #060706d0;/* cor para o fundo do icone*/
+    color: var(--red);
+    transition: background 0.6s;
+}
+.instagram:hover{
+    background-color: #060706d0;/* cor para o fundo do icone*/
+    color: var(--red);
+    transition: background 0.6s;
+}
+
 header{
     width: 100%;
     background: var(--gray);
@@ -125,10 +146,10 @@ transition: color 0.6s;
 nav ul li a {
     color: var(--black);
     text-decoration: none;
-    margin: 20px;
+    margin: 15px;
     text-transform: uppercase;    
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 nav ul li a:hover {
@@ -156,7 +177,7 @@ nav ul li a:hover {
 .titulo-principal{
     margin-top: 70px;
     color: var(--red);
-    font-size: 3.1em;
+    font-size: 3.2em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -166,6 +187,8 @@ nav ul li a:hover {
     margin: 0 0 1em;
     padding: 10px;
     line-height: 1.8em;
+    padding: 0 8em 0 2em;
+    text-align: justify;
 }
 
 .principal strong {
@@ -177,6 +200,42 @@ nav ul li a:hover {
     font-style: italic;
     font-weight: 600;
    
+}
+
+.parceiros{
+padding: 3em 0;
+
+}
+
+.card__section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.paraEmpresas{
+    background: #93b3bf83;
+    width: 80%;
+    margin: 20px;
+    border-radius: 60px 20px 5px;
+    cursor: pointer;
+   
+}
+.paraEmpresas:hover{
+    background: var(--blueDark);
+    transition: background 0.9s;
+    
+}
+
+article div p{
+    color: var(--black);
+    margin: 0 0 1em;
+    padding: 10px;
+    line-height: 1.8em;
+    padding: 0 8em 0 2em;
+    text-align: justify;
 }
 
 .img__texto-principal{
