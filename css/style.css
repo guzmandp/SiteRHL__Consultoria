@@ -158,7 +158,7 @@ nav ul li a:hover {
 }
 
 .logo  {
-    width: 25%;
+    width: 20%;
 }
 
 
@@ -174,10 +174,24 @@ nav ul li a:hover {
     width: 100%;
 }
 
+.principal_servi { 
+    padding: 3em 0;
+    background: var(--gray);
+    width: 100%;
+}
+
 .titulo-principal{
     margin-top: 70px;
     color: var(--red);
     font-size: 3.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subTitulo-principal{
+    margin-top: 30px;
+    color: var(--blueDark);
+    font-size: 2.1em;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -210,9 +224,40 @@ padding: 3em 0;
 .card__section{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 20px;
     justify-content: space-evenly;
+    padding: 60px;
+
+}
+
+.box__section{
+    cursor: pointer;
+    width: 40%;
+    background: var(--red);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: #262626;
+}
+
+.size__img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+    margin: 0;
+}
+
+.title__card{
+    margin: 35px;
+    padding: 10px;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+.descricao-servicos{
+    margin: 35px;
+    padding: 10px;
+    font-size: 19px;
+    color: var(--gray);
 }
 
 .paraEmpresas{
