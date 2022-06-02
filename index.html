@@ -24,7 +24,7 @@
                         <li><a href="#quemSomos">Quem somos</a></li>
                         <li><a href="#parceiros">Parceiros</a></li>
                         <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="./pages/contato.html">Contato</a></li>
+                        <li><a href="#contato">Contato</a></li>
                         <a class="whatsapp" href="https://web.whatsapp.com/send?" target="_blank">
                             <i class="fa fa-whatsapp"></i>
                         </a>
@@ -37,8 +37,7 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-        
+        </div>        
         <div class="content__img" id="index">
             <img 
             class="img__banner" 
@@ -46,8 +45,7 @@
         </div>
     </header> 
     <main>
-        <section class="principal"id="quemSomos" >
-           
+        <section class="principal"id="quemSomos" >           
             <h1 class="titulo-principal">Sobre a RHL</h1>
             <img 
                 class="img__texto-principal" 
@@ -101,7 +99,6 @@
                 </article>
             </div>    
         </section>
-
         <section class="principal_servi" id="servicos">
             <h2 class="titulo-principal">Nossos serviços</h2>
             <h4 class="subTitulo-principal">Venha fazer parte desta familia.</h4>
@@ -116,11 +113,8 @@
                         <p class="descricao-servicos">-Análise e reformulação de Currículo</p>
                         <p class="descricao-servicos">-Análise e reformulação de LinkedIn</p>
                         <p class="descricao-servicos">-Criação de Carta de apresentação profissional para abordagens</p>
-                    </div>
-                   
+                    </div>                  
                 </article>
-
-
                 <article class="box__section">
                     <div class="container__img">
                     <img class="size__img" src="./img/Preparatorio.jpeg">
@@ -133,8 +127,6 @@
                     <p class="descricao-servicos">-Feedback estratégico e direcionado para seus processos seletivos</p>
                     </div>
                 </article>
-
-
                 <article class="box__section">
                      <div class="container__img">
                         <img class="size__img" src="./img/Hunter.jpeg">
@@ -147,8 +139,6 @@
                         <p class="descricao-servicos">- Contato com RHs e Recrutadores</p>
                     </div>                   
                 </article>
-
-
                 <article class="box__section">
                     <div class="container__img">
                         <img class="size__img" src="./img/Mentoria.jpeg">
@@ -162,22 +152,79 @@
                         <p class="descricao-servicos">-Estudo da empregabilidade (formações acadêmicas, experiências, resultados..)</p>
                         <p class="descricao-servicos">-Orientações para saber posicionar-se e gerar confiança no mercado</p>
                         <p class="descricao-servicos">-Inclui ainda: Programa de Recolocação Profissional e Preparatório de Entrevista</p>
-                    </div>
-            
+                    </div>            
                 </article>
             </div>     
-        </section>
-        
-        
-        
-        <section class="mapa">
-            <h2 class="titulo-mapa">Nosso local, fique à vontade para conhecer!</h2>
-            <p>Será um prazer ter sua visita.</p>
-                <div class="mapa-conteudo">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49789.9597335252!2d-9.195222603584906!3d38.74368832088129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1652162062712!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>        
+        <section class="principal" id="contato">
+            <h2 class="titulo-principal">Me contata</h2>
+            <div class="container__contactMapa">
+                <div class="contact">
+                    <form>
+                        <label for="nomesobrenome">Nome e sobrenome</label>
+                        <input type="text>" id="nome" class="input-padrao"required>
+
+                        <label for="email">Email</label>
+                        <input type="email>" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel>" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="cep">CEP</label>
+                        <input class="input-padrao" type="text" id="cep" maxlength="9" required>
+                        
+                        <label for="endereço">Endereço</label>
+                        <input type="text" id="logradouro"  class="input-padrao" disabled>
+
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro"  class="input-padrao" disabled>
+            
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="localidade"  class="input-padrao" disabled>
+                        
+                        <label for="estado">UF</label>
+                        <input type="text" id="uf"  class="input-padrao" disabled>
+
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero"  class="input-padrao" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea required>
+
+                        <fieldset>
+                        <legend>Como prefere nosso contato?</legend>
+
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                        
+
+                        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                        
+
+                        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                        
+                        </fieldset>
+
+                        <fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                        </fieldset>
+
+                        <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas vagas por e-mail?</label>
+                        <input type="submit" value="Enviar formulário" class="enviar">
+                    </form>
+                </div>
+                <div class="mapa">
+                    <h2 class="titulo-mapa">Nosso local, fique à vontade para conhecer!</h2>
+                    <p>Será um prazer ter sua visita.</p>
+                        <div class="mapa-conteudo">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49789.9597335252!2d-9.195222603584906!3d38.74368832088129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1652162062712!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                 </div>
         </section>
-        
     </main>
     <footer>
         <img src="./img/rodape.png">
@@ -185,6 +232,7 @@
         <p class="copyright">CNPJ 46.339.396/0001-96</p>
     </footer> 
     <script src="./js/scroll.js"></script>   
+    <script src="./js/script.js"></script>
 </body>
 </html>
 

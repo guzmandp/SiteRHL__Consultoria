@@ -10,7 +10,7 @@ const showData = (result) => {
       document.querySelector("#" + campo).value = result[campo];
     }
   }
-};
+}; 
 cep.addEventListener("blur", (event) => {
   var idCep = cep.value.replace("-", "");
 
