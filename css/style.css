@@ -294,31 +294,38 @@ article div p{
 
 .container__contactMapa{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 30px;
+    padding: 0px;
+}
+.contact{
+    width: 50%;
 }
 
 form{
-    padding: 10px;
-    margin: 40px 0;
+    padding: 5%;
+    
 }
-form label, form legend{
-   
-    font-size: 20px;
-    margin: 0 0 10px;
+form label{
+   font-size: 20px;
+   color: var(--blueDark);
+  
 }
-.input-padrao{
+input{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 100%;
+    border-radius: 15px 5px 2px;
+    border-color: transparent;
 }
 .checkbox{
     margin: 20px 0;
 }
 .enviar {
-    width: 40%;
+    width: 20%;
     padding: 15px 0;
     background: #C78c19;
     color: white;
@@ -333,28 +340,30 @@ form label, form legend{
 .enviar:hover{
     background: darkorange;
 }
-
+iframe{
+    width: 70%;
+}
 .mapa {
-    padding: 3em 0;
-    background: var(--blue);
+    width: 50%;
+    padding: 1em 0;
+    background: var(--gray);
 }
 
 .titulo-mapa{
     color: var(--red);
-    font-size: 3.1em;
+    font-size: 1.5em;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .mapa-conteudo {
-    width: 50%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .mapa p {
-    color: var(--black);
-    margin: 0 0 1em;
-    padding: 10px;
+    color: var(--blueDark);
+    padding: 5px;
     line-height: 1.8em;
     text-align: center;
     font-size: 1.5em;
