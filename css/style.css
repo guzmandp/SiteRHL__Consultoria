@@ -346,3 +346,11 @@ footer {
   font-size: 1.1em;
   margin: 10px 0 0;
 }
+
+/* Responsive */
+
+@media (max-width: 776px) {
+  nav div ul li {
+    display: none;
+  }
+}

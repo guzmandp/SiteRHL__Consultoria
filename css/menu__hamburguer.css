@@ -1,7 +1,9 @@
 .container-menu-burger {
   --menu-size: 48px;
 
-  position: relative;
+  position: fixed;
+  bottom: 90%;
+  margin-left: 90%;
   display: flex;
   align-items: center;
   height: var(--menu-size);
@@ -67,4 +69,10 @@
 .container-menu-burger:active .menu-burger::after {
   transform: rotate(-45deg);
   width: var(--menu-size);
+}
+
+@media (min-width: 776px) {
+  .item {
+    display: none;
+  }
 }
