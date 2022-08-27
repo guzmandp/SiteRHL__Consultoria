@@ -22,7 +22,7 @@ body {
   overflow-x: hidden; /* ocultar barra de rodagem*/
 }
 main {
-  background: #ffffff url("../img/bannerz.jpg") no-repeat right top fixed;
+  background: #ffffff url("../img/bannerz.jpg") no-repeat left top fixed;
   background-size: 100%; /* 20% à direita e 40% abaixo */
 }
 .whatsapp {
